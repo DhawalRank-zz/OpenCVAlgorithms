@@ -1,0 +1,19 @@
+#include <opencv2/opencv.hpp>
+#include "opencv2/imgcodecs.hpp"
+#include<stdio.h>
+#include <iostream>
+#include <sstream>
+using namespace cv;
+using namespace std;
+int main( int argc, char** argv )
+{
+	Mat A, M;
+	A = imread(argv[1], IMREAD_COLOR);
+	M.create(4,4, CV_8UC(3));
+	randu(M, Scalar::all(0), Scalar::all(255));
+	cout << "M (python)  = " << endl << format(M, Formatter::FMT_PYTHON) << endl << endl;
+//	namedWindow( "Final Image", WINDOW_AUTOSIZE );
+//	imshow("Final Image", L);
+//	waitKey(0);
+	return 0;
+}

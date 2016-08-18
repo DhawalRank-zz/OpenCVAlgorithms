@@ -1,0 +1,26 @@
+#include <opencv2/opencv.hpp>
+#include "opencv2/imgcodecs.hpp"
+#include<stdio.h>
+#include <iostream>
+#include <sstream>
+using namespace cv;
+using namespace std;
+int main( int argc, char** argv )
+{
+	Mat A, C;
+	A = imread(argv[1], IMREAD_COLOR);
+	cout << A << endl;
+	MatIterator_<Vec3b> it, end;
+	for( it =A.begin<Vec3b>(), end = A.end<Vec3b>(); it != end; ++it) {
+		(*it)[0] = ((*it)[0]/10)*10;
+		(*it)[1] = ((*it)[1]/10)*10;
+		(*it)[2] = ((*it)[2]/10)*10;
+	}
+	cout<<" "<<endl;
+	cout<<"---------------------------------------------------------------------------------------------------------------------------------"<<endl;
+	cout << A << endl;
+	namedWindow( "Final Image", WINDOW_AUTOSIZE );
+	imshow("Final Image", A);
+	waitKey(0);
+	return 0;
+}

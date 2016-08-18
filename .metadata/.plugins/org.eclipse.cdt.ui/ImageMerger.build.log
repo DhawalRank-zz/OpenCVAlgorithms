@@ -1,0 +1,19 @@
+21:03:55 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+
+21:03:55 Build Finished (took 617ms)
+

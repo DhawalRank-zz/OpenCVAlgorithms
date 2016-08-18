@@ -1,0 +1,25 @@
+20:48:29 **** Incremental Build of configuration Debug for project tries ****
+make all 
+Building file: ../src/FeatureMatch.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/opencv.hpp -I/usr/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FeatureMatch.d" -MT"src/FeatureMatch.o" -o "src/FeatureMatch.o" "../src/FeatureMatch.cpp"
+Finished building: ../src/FeatureMatch.cpp
+ 
+Building file: ../src/SubPixCorner.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/opencv.hpp -I/usr/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SubPixCorner.d" -MT"src/SubPixCorner.o" -o "src/SubPixCorner.o" "../src/SubPixCorner.cpp"
+Finished building: ../src/SubPixCorner.cpp
+ 
+Building file: ../src/try.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/opencv.hpp -I/usr/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/try.d" -MT"src/try.o" -o "src/try.o" "../src/try.cpp"
+Finished building: ../src/try.cpp
+ 
+Building target: tries
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "tries"  ./src/FeatureMatch.o ./src/SubPixCorner.o ./src/try.o   -lopencv_xfeatures2d -lopencv_imgcodecs -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_calib3d -lopencv_objdetect -lopencv_flann -lopencv_videoio -lopencv_video -lopencv_features2d
+Finished building target: tries
+ 
+
+20:48:30 Build Finished (took 1s.60ms)
+

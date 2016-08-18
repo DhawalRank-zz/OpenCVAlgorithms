@@ -1,0 +1,209 @@
+20:46:04 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+20:46:12 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:46:37 **** Incremental Build of configuration Debug for project BackgroundSubstractor ****
+make all 
+Building file: ../src/BackgroundSubstractor.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BackgroundSubstractor.d" -MT"src/BackgroundSubstractor.o" -o "src/BackgroundSubstractor.o" "../src/BackgroundSubstractor.cpp"
+Finished building: ../src/BackgroundSubstractor.cpp
+ 
+Building target: BackgroundSubstractor
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "BackgroundSubstractor"  ./src/BackgroundSubstractor.o   -lopencv_xfeatures2d -lopencv_imgcodecs -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_calib3d -lopencv_objdetect -lopencv_flann -lopencv_videoio -lopencv_video -lopencv_features2d
+Finished building target: BackgroundSubstractor
+ 
+20:46:49 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:48:07 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:48:13 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:48:21 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:48:28 **** Incremental Build of configuration Debug for project BackgroundSubstractor ****
+make all 
+make: Nothing to be done for `all'.
+20:48:28 **** Build of configuration Debug for project BasicOperations ****
+make all 
+make: Nothing to be done for `all'.
+20:48:28 **** Build of configuration Debug for project CornerDetector ****
+make all 
+make: Nothing to be done for `all'.
+20:48:28 **** Build of configuration Debug for project DisplayImage ****
+make all 
+make: Nothing to be done for `all'.
+20:48:28 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:48:29 **** Build of configuration Debug for project ObjectDetection ****
+make all 
+make: Nothing to be done for `all'.
+20:48:29 **** Build of configuration Debug for project ScanAndReduce ****
+make all 
+make: Nothing to be done for `all'.
+20:48:29 **** Incremental Build of configuration Debug for project tries ****
+make all 
+Building file: ../src/FeatureMatch.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/opencv.hpp -I/usr/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FeatureMatch.d" -MT"src/FeatureMatch.o" -o "src/FeatureMatch.o" "../src/FeatureMatch.cpp"
+Finished building: ../src/FeatureMatch.cpp
+ 
+Building file: ../src/SubPixCorner.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/opencv.hpp -I/usr/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SubPixCorner.d" -MT"src/SubPixCorner.o" -o "src/SubPixCorner.o" "../src/SubPixCorner.cpp"
+Finished building: ../src/SubPixCorner.cpp
+ 
+Building file: ../src/try.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/include/opencv2/opencv.hpp -I/usr/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/try.d" -MT"src/try.o" -o "src/try.o" "../src/try.cpp"
+Finished building: ../src/try.cpp
+ 
+Building target: tries
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "tries"  ./src/FeatureMatch.o ./src/SubPixCorner.o ./src/try.o   -lopencv_xfeatures2d -lopencv_imgcodecs -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_calib3d -lopencv_objdetect -lopencv_flann -lopencv_videoio -lopencv_video -lopencv_features2d
+Finished building target: tries
+ 
+20:48:32 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:49:02 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+20:49:05 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:52:15 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+20:52:39 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:52:42 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:54:28 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:54:36 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+20:56:31 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+20:57:42 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+20:59:48 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 
+21:00:22 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+21:00:40 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+21:03:06 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+make: Nothing to be done for `all'.
+21:03:55 **** Incremental Build of configuration Debug for project ImageMerger ****
+make all 
+Building file: ../src/ImageMerger.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ImageMerger.d" -MT"src/ImageMerger.o" -o "src/ImageMerger.o" "../src/ImageMerger.cpp"
+../src/ImageMerger.cpp:6:5: warning: first argument of ‘int main(char**, int)’ should be ‘int’ [-Wmain]
+ int main(char** argv, int argc){
+     ^
+../src/ImageMerger.cpp:6:5: warning: second argument of ‘int main(char**, int)’ should be ‘char **’ [-Wmain]
+Finished building: ../src/ImageMerger.cpp
+ 
+Building target: ImageMerger
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "ImageMerger"  ./src/ImageMerger.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_photo
+Finished building target: ImageMerger
+ 

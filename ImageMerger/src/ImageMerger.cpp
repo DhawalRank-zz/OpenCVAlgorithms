@@ -1,0 +1,25 @@
+#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <opencv2/highgui.hpp>
+
+using namespace cv;
+int main(char** argv, int argc){
+	double alpha = 0.5; double beta;
+	Mat src1,  src2, dest;
+	src1=imread("/home/dhawal/Downloads/d.jpg");
+	src2=imread("/home/dhawal/Downloads/d.jpg");
+	if(!src1.data){
+		printf("Unable to read Image 1");
+		return -1;
+	}
+	if(!src2.data){
+		printf("Unable to read Image 2");
+		return -1;
+	}
+	namedWindow("Linear Blend", 1);
+	beta =( 1.0- alpha);
+	addWeighted(src1, alpha, src2, beta, 0.0, dest);
+	imshow("Linear Blend", dest);
+	waitKey(0);
+	return 0;
+}

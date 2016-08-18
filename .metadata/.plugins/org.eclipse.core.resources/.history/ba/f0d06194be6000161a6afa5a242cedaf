@@ -1,0 +1,17 @@
+#include <opencv2/opencv.hpp>
+#include "opencv2/imgcodecs.hpp"
+#include<stdio.h>
+#include <iostream>
+#include <sstream>
+using namespace cv;
+using namespace std;
+int main( int argc, char** argv )
+{
+	Mat A, C;
+	A = imread(argv[1], IMREAD_COLOR);
+	Mat D (A, Rect(100, 100, 1000, 1000) );
+	namedWindow( "Final Image", WINDOW_AUTOSIZE );
+	imshow("Final Image",D);
+	waitKey(0);
+	return 0;
+}

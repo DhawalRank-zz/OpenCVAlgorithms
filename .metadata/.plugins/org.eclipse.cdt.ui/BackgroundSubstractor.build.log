@@ -1,0 +1,6 @@
+20:48:28 **** Incremental Build of configuration Debug for project BackgroundSubstractor ****
+make all 
+make: Nothing to be done for `all'.
+
+20:48:28 Build Finished (took 62ms)
+

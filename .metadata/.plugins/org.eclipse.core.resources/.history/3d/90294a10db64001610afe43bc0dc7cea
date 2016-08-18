@@ -1,0 +1,17 @@
+#include <opencv2/opencv.hpp>
+#include <iostream>
+using namespace cv;
+int main(char** argv, int argc){
+	double alpha = 0.5; double beta; double input;
+	Mat src1, src2, dest;
+	src1=imread(argv[1]);
+	src2=imread(argv[2]);
+	if(!src1.data || !src2.data){
+		if(!src1.data)
+			printf("Unable to read Image 1");
+		else
+			printf("Unable to read Image 2");
+		exit(0);
+	}
+	input=int(argv[3])
+}
